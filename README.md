@@ -1,37 +1,50 @@
-# Nice Slice Pizza Parlor
+# Nice Slice Pizza Parlor 🍕
 
 #### By Eliot Gronstal January 2023
 
-#### _{Brief description of application}_
+#### A website for a pizza company where a user can choose one or more individual toppings, a size to order a pizza, and see the final cost. Made for my Independent Project in Week 4 of Epicodus Coding School.
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* Javascript
+* CSS
+* GitHub
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+A website for a pizza company where a user can choose one or more individual toppings, a size to order a pizza, and see the final cost. Made for my Independent Project in Week 4 of Epicodus Coding School.
+
+This project will:
+* Allow the user to choose toppings and size for the pizza they'd like to order.
+* Create a pizza object constructor with properties for toppings and size.
+* Create a prototype method for the cost of a pizza depending on the selections chosen using my own formula.
+
+## TDD
+
+Describe: function()
+
+* Test One
+Test: "It should ”  example: return an array of numbers from 0 to 5."
+Code: 
+const input = [1, 2, 3, 4, 5];
+fredBot(input);]
+Expected Output: example:[0, 1, 2, 3, 4, 5]
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone the repository to your desktop.
+* Open the files and visit the website to order a nice slice!
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* If there are any questions or concerns please reach out to Eliot at eliot.lauren@gmail.com.
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Bugs here:
+* More toppings and custom styles of pizza can always be added! There's no such thing as too much pizza!
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+MIT
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) 2023 Eliot Gronstal
