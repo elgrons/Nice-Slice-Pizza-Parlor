@@ -1,19 +1,27 @@
 // BUSINESS LOGIC
 
-// Business Logic for NiceSlice:
+// Business Logic for my Constructor: NiceSlice:
 function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
   this.pizzaTopping = pizzaTopping;
 }
 
-NiceSlice.prototype.chooseSize = function(){
 
+NiceSlice.prototype.addSize = function(size) {
+  this.pizzaSize[size.pizzaSize] = size.id;
 }
+
 
 NiceSlice.prototype.chooseTopping = function(){
 
 }
 
+// Business Logic for orderSummary:
+function orderSummary() {
+  let pizzaTotal = this.pizzaSize + this.pizzaTopping
+  // Math.round(Math.random()*6 + 1);
+  return pizzaTotal;
+}
 
 
 

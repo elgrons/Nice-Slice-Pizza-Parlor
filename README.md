@@ -30,16 +30,24 @@ Code:
 let niceSlice = new NiceSlice("regular", ["pineapple", "jalapeno"]);
 Expected Output: niceSlice {pizzaSize: 'regular', pizzaTopping:["pineapple" "jalapeno"]}
 
+<!-- function NiceSlice(pizzaSize, pizzaTopping) {
+  this.pizzaSize = pizzaSize;
+  this.pizzaTopping = pizzaTopping;
+} -->
+
 *Test Passes*
 
-* Test Two
-Test: "It should "
-Code: 
+Describe: NiceSlice.prototype.chooseSize
 
+* Test One
+Test: "It should assign size choice to NiceSlice from user input."
+Code: 
+NiceSlice.prototype.chooseSize
 Expected Output: 
 
-
-
+<!-- NiceSlice.prototype.chooseSize = function(size){
+  size.id = this.pizzaSize();
+} -->
 
 Describe NiceSlice.prototype.chooseSize
 
