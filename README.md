@@ -1,6 +1,6 @@
 # Nice Slice Pizza Parlor 🍕
 
-#### By Eliot Gronstal January 2023
+#### By Eliot Gronstal, January 2023
 
 #### A website for a pizza company where a user can choose one or more individual toppings, a size to order a pizza, and see the final cost. Made for my Independent Project in Week 4 of Epicodus Coding School.
 
@@ -22,14 +22,42 @@ This project will:
 
 ## TDD
 
-Describe: function()
+Describe: NiceSlice()
 
 * Test One
-Test: "It should ”  example: return an array of numbers from 0 to 5."
+Test: "It should return a Pizza object with two properties for toppings and size"
 Code: 
-const input = [1, 2, 3, 4, 5];
-fredBot(input);]
-Expected Output: example:[0, 1, 2, 3, 4, 5]
+let niceSlice = new NiceSlice("regular", ["pineapple", "jalapeno"]);
+Expected Output: niceSlice {pizzaSize: 'regular', pizzaTopping:["pineapple" "jalapeno"]}
+
+*Test Passes*
+
+* Test Two
+Test: "It should "
+Code: 
+
+Expected Output: 
+
+
+
+
+Describe NiceSlice.prototype.chooseSize
+
+* Test One
+Test: "It should return a Pizza object with two properties for toppings and size"
+Code: 
+const niceSlice = new Pizza(["pineapple", "jalapeno"], "regular");
+Expected Output: Pizza { toppings: ["pineapple", "jalapeno"],], size: "regular" }
+
+Describe NiceSlice.prototype.chooseTopping
+
+* Test One
+Test: "It should return a Pizza object with two properties for toppings and size"
+Code: 
+const niceSlice = new Pizza(["pineapple", "jalapeno"], "regular");
+Expected Output: Pizza { toppings: ["pineapple", "jalapeno"],], size: "regular" }
+
+
 
 ## Setup/Installation Requirements
 
