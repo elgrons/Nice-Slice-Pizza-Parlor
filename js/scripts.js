@@ -1,5 +1,10 @@
 // BUSINESS LOGIC
 
+// Add a Global Variable for TDD testing in DevTools:
+// function OrderPizza() {
+//   this.niceslices = {};
+// }
+
 // Business Logic for my Constructor: NiceSlice:
 function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
@@ -7,12 +12,15 @@ function NiceSlice(pizzaSize, pizzaTopping) {
 }
 
 
-NiceSlice.prototype.addSize = function(size) {
-  this.pizzaSize[size.pizzaSize] = size.id;
+NiceSlice.prototype.addSize = function([size]) {
+  // let regular = 
+  // let large = 
+  this.pizzaSize[size.pizzaSize] = size;
+  return this.pizzaSize;
 }
 
 
-NiceSlice.prototype.chooseTopping = function(){
+NiceSlice.prototype.addTopping = function(){
 
 }
 
