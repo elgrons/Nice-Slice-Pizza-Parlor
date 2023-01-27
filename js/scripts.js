@@ -1,28 +1,38 @@
 // BUSINESS LOGIC
 
-// Add a Global Variable for TDD testing in DevTools:
-// function OrderPizza() {
-//   this.niceslices = {};
-// }
-
 // Business Logic for my Constructor: NiceSlice:
 function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
   this.pizzaTopping = pizzaTopping;
+  this.orderSummary = 0;
 }
 
-
-NiceSlice.prototype.addSizeCost = function(size) {
-  let size = this.pizzaSize
-  let regularSize = this.pizzaSize + 20 = 20;
-  let largeSize = this.pizzaSize + size = 27;
-  this.pizzaSize[size.pizzaSize] = size;
+NiceSlice.prototype.addSizeCost = function() {
+  this.pizzaSize = 0;
+  if (this.pizzaSize === "regular") {
+    this.pizzaSize + 20;
+  } 
+    else if (this.pizzaSize === "large") {
+    this.pizzaSize + 28;
+  }
   return this.pizzaSize;
 }
 
+NiceSlice.prototype.addToppingCost = function() {
+  let toppings = 
+  this.pizzaTopping = 0;
+  let pepperoni = this.pizzaTopping +4;
+  let pineapple = this.pizzaTopping +3;
+  let jalapeno = this.pizzaTopping +3;
+  if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
+  return this.pizzaTopping; 
+}
 
-NiceSlice.prototype.addTopping = function(){
-
+NiceSlice.prototype.orderSummary = function() {
+  this.orderSummary = 0;
+  let totalCost = (this.pizzaSize + this.pizzaTopping);
+  totalCost.push(this.orderSummary)
+  return this.orderSummary;
 }
 
 // Business Logic for orderSummary:
@@ -35,6 +45,8 @@ function orderSummary() {
 
 
 // USER INTERFACE LOGIC
+
+let niceSlice = new NiceSlice();
 
 // let niceSlice = new NiceSlice(); //creating a nickname for a new AddressBook object-- not sure if I need this since I'm trying to move forward w/out a global variable
 
