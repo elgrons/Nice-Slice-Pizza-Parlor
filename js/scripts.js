@@ -1,5 +1,11 @@
 // BUSINESS LOGIC
 
+//Business Logic for NewOrder (maybe a global variable and delete)
+function NewOrder () {
+  this.pizza = {};
+  this.orderSummary = orderSummary;
+}
+
 // Business Logic for my Constructor: NiceSlice:
 function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
@@ -18,15 +24,15 @@ NiceSlice.prototype.addSizeCost = function() {
   return this.pizzaSize;
 }
 
-NiceSlice.prototype.addToppingCost = function() {
-  let toppings = 
-  this.pizzaTopping = 0;
-  let pepperoni = this.pizzaTopping +4;
-  let pineapple = this.pizzaTopping +3;
-  let jalapeno = this.pizzaTopping +3;
-  if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
-  return this.pizzaTopping; 
-}
+// NiceSlice.prototype.addToppingCost = function() {
+//   let toppings = 
+//   this.pizzaTopping = 0;
+//   let pepperoni = this.pizzaTopping +4;
+//   let pineapple = this.pizzaTopping +3;
+//   let jalapeno = this.pizzaTopping +3;
+//   if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
+//   return this.pizzaTopping; 
+// }
 
 NiceSlice.prototype.orderSummary = function() {
   this.orderSummary = 0;
@@ -38,22 +44,15 @@ NiceSlice.prototype.orderSummary = function() {
 // Business Logic for orderSummary:
 function orderSummary() {
   let pizzaTotal = this.pizzaSize + this.pizzaTopping
-  // Math.round(Math.random()*6 + 1);
   return pizzaTotal;
 }
-
-
 
 // USER INTERFACE LOGIC
 
 let niceSlice = new NiceSlice();
 
-// let niceSlice = new NiceSlice(); //creating a nickname for a new AddressBook object-- not sure if I need this since I'm trying to move forward w/out a global variable
-
-// adding the below function to keep up separation of concerns. This will make a UI list function to display the objects we've taken in.
-
 function orderSummary(orderSummaryToDisplay) {
-  let contactsDiv = document.querySelector("div#contacts");
+  let contactsDiv = document.querySelector("div#pizzaTotal");
   contactsDiv.innerText =  null;
   const ul = document.createElement("ul");
   Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
@@ -69,80 +68,6 @@ function orderSummary(orderSummaryToDisplay) {
 window.addEventListener("load", function() {
 
 })
-
-
-
-
-
-
-
-
-// Business Logic for Contacts ---------
-function Contact(firstName, lastName, phoneNumber, emailAddress, homeAddress) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.phoneNumber = phoneNumber;
-  this.emailAddress = emailAddress;
-  this.homeAddress = homeAddress;
-}
-
-AddressBook.prototype.addContact = function(contact) {
-  contact.id = this.assignId();
-  this.contacts[contact.id] = contact;
-};
-
-//I can't add a Contact to the Contact function, b/c it needs somethin 
-
-AddressBook.prototype.assignId = function() {
-  this.currentId += 1;
-  return this.currentId;
-};
-
-AddressBook.prototype.findContact = function(id) {
-  if (this.contacts[id] !== undefined) { // "id" related back to line 9 in .addContact
-    return this.contacts[id];
-  }
-  return false;
-};
-
-AddressBook.prototype.deleteContact = function(id) {
-  if (this.contacts[id] === undefined) {
-    return false;
-  }
-  delete this.contacts[id];
-  return true;
-};
-
-//This is where we were trying to figure out nesting objects
-
-// function EmailAddress(homeEmail, workEmail) {
-//   this.homeEmail = homeEmail;
-//   this.workEmail = workEmail;
-// }
-
-// function Address(homeAddress, workAddress) {
-//   this.homeAddress = homeAddress;
-//   this.workAddress = workAddress;
-// }
-//OBJECT KEYS ARE ABOVE!!
-
-Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName;
-};
-
-// Contact.prototype.update = function() {
-//   this.contact.phoneNumber.replace("");
-//   return this.contact.phoneNumber;
-// };
-
-// FROM MOLLY IN THE CHAT/SUGGESTED Contact.UPDATE.PROTOTYPE OPTIONS:
-// testContact.updateContact (this.phoneNumber, “888-888-8888”)
-// contact.prototype.updateContact = function(firstName, lastName, phoneNumber)
-// Contact.updateContact(phoneNumber, “888-888-8888”)
-// Contact.updateContact(phoneNumber, “888-888-8888”)
-
-// User Interface Logic ---------
-let addressBook = new AddressBook(); //creating a nickname for a new AddressBook object
 
 // adding this function to keep up separation of concerns. This will make a UI list function to display the objects we've taken in.
 function listContacts(addressBookToDisplay) {
