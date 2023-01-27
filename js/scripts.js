@@ -64,19 +64,21 @@ window.addEventListener("load", function() {
 
 
 
-
-
-// Business Logic for AddressBook ---------
-function AddressBook() {
-  this.contacts = {};
-  this.currentId = 0;
+// Business Logic for Contacts ---------
+function Contact(firstName, lastName, phoneNumber, emailAddress, homeAddress) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.phoneNumber = phoneNumber;
+  this.emailAddress = emailAddress;
+  this.homeAddress = homeAddress;
 }
-// an example of a global variable mimicking a database- NOT IDEAL/DON'T REPLICATE
 
 AddressBook.prototype.addContact = function(contact) {
   contact.id = this.assignId();
   this.contacts[contact.id] = contact;
 };
+
+//I can't add a Contact to the Contact function, b/c it needs somethin 
 
 AddressBook.prototype.assignId = function() {
   this.currentId += 1;
@@ -97,16 +99,6 @@ AddressBook.prototype.deleteContact = function(id) {
   delete this.contacts[id];
   return true;
 };
-
-// Business Logic for Contacts ---------
-function Contact(firstName, lastName, phoneNumber, emailAddress, homeAddress) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.phoneNumber = phoneNumber;
-  this.emailAddress = emailAddress;
-  //this.workEmail = workEmail;
-  this.homeAddress = homeAddress;
-}
 
 //This is where we were trying to figure out nesting objects
 

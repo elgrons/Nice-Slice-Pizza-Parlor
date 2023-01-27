@@ -25,7 +25,7 @@ This project will:
 Describe: NiceSlice()
 
 * Test One
-Test: "It should return a Pizza object with two properties for toppings and size"
+Test: "It should return a NiceSlice object with two properties for toppings and size."
 Code: 
 let niceSlice = new NiceSlice("regular", ["pineapple", "jalapeno"]);
 Expected Output: niceSlice {pizzaSize: 'regular', pizzaTopping:["pineapple" "jalapeno"]}
