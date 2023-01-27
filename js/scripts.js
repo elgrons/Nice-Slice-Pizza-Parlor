@@ -12,9 +12,10 @@ function NiceSlice(pizzaSize, pizzaTopping) {
 }
 
 
-NiceSlice.prototype.addSize = function([size]) {
-  // let regular = 
-  // let large = 
+NiceSlice.prototype.addSizeCost = function(size) {
+  let size = this.pizzaSize
+  let regularSize = this.pizzaSize + 20 = 20;
+  let largeSize = this.pizzaSize + size = 27;
   this.pizzaSize[size.pizzaSize] = size;
   return this.pizzaSize;
 }
