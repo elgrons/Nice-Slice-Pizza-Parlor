@@ -1,46 +1,64 @@
 // BUSINESS LOGIC
 
 // Business Logic for my Constructor: NiceSlice:
-function NiceSlice(pizzaSize) {
+function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
-  this.pizzaTopping = [];
-  this.pizzaTotal = 0;
+  this.pizzaTopping = pizzaTopping;
 }
 
 NiceSlice.prototype.pizzaOrder = function() {
-    this.pizzaTotal = (this.pizzaTopping + i) + this.pizzaSize;
+  if (this.pizzaSize = 'regular') {
+    this.pizzaSize += 20;
+  }
+  else if (this.pizzaSize = 'regular') {
+    this.pizzaSize += 28;
+  }
+  return this.pizzaSize;
 }
+
+NiceSlice.prototype.pizzaToppings = function () {
+let toppingsTotal = 0;
+  this.pizzaTopping.ForEach(function(topping)) {
+    if (topping.includes('pepperoni') || topping.includes('pineapple') || topping.includes('jalapeno')) {
+      toppingsTotal += 4.00
+    }
+  };
+}
+
+  
+  
 
 NiceSlice.prototype.orderTotal = function() {
 
 }
 
-// NiceSlice.prototype.addSizeCost = function() {
-//   this.pizzaSize = 0;
-//   if (this.pizzaSize === "regular") {
-//     this.pizzaSize + 20;
-//   } 
-//     else if (this.pizzaSize === "large") {
-//     this.pizzaSize + 28;
-//   }
-//   return this.pizzaSize;
-// }
+NiceSlice.prototype.addSizeCost = function() {
+  this.pizzaSize = 0;
+  if (this.pizzaSize === "regular") {
+    this.pizzaSize + 20;
+  } 
+    else if (this.pizzaSize === "large") {
+    this.pizzaSize + 28;
+  }
+  return this.pizzaSize;
+}
 
-// NiceSlice.prototype.addToppingCost = function() {
-//   this.pizzaTopping = 0;
-//   for (let i = 0; i< this.pizzas.length; i++) {
-//     this.total += this.pizzas[i].cost;
-//   }
-// }
+NiceSlice.prototype.addToppingCost = function() {
+  // if none are checked = null
+  this.pizzaTopping = 0;
+  for (let i = 0; i< this.pizzas.length; i++) {
+    this.total += this.pizzas[i].cost;
+  }
+}
 
-//   let toppings = 
-//   this.pizzaTopping = 0;
-//   let pepperoni = this.pizzaTopping +4;
-//   let pineapple = this.pizzaTopping +3;
-//   let jalapeno = this.pizzaTopping +3;
-//   if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
-//   return this.pizzaTopping; 
-// }
+  let toppings = 
+  this.pizzaTopping = 0;
+  let pepperoni = this.pizzaTopping +4;
+  let pineapple = this.pizzaTopping +3;
+  let jalapeno = this.pizzaTopping +3;
+  if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
+  return this.pizzaTopping; 
+}
 
 NiceSlice.prototype.orderSummary = function() {
   this.orderSummary = 0;
@@ -71,12 +89,13 @@ let niceSlice = new NiceSlice();
 
 function handleFormSubmission(event) {
   event.preventDefault();
-  const regular = parseInt(document.querySelector("input[id='regular']:checked").value);
-  const large = parseInt(document.querySelector("input[id='large']").value);
-  const plain = parseInt(document.querySelector("input[id='plain']").value);
-  const pepperoni = parseInt(document.querySelector("input[id='pepperoni']").value);
-  const pineapple = parseInt(document.querySelector("input[id='pineapple']").value);
-  const jalapeno = parseInt(document.querySelector("input[id='jalapeno']").value);
+  const inputRegular = parseInt(document.querySelector("input[id='regular']:checked").value);
+  const inputLarge = parseInt(document.querySelector("input[id='large']").value);
+  const inputPepperoni = parseInt(document.querySelector("input[id='pepperoni']").value);
+  const inputPineapple = parseInt(document.querySelector("input[id='pineapple']").value);
+  const inputJalapeno = parseInt(document.querySelector("input[id='jalapeno']").value);
+
+  let niceSlice = new NiceSlice(pizzaSize, pizzaTopping, pizzaTotal);
 
 
   const inputtedPhoneNumber = document.querySelector("input#new-phone-number").value;
