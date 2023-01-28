@@ -4,13 +4,14 @@
 function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaSize = pizzaSize;
   this.pizzaTopping = pizzaTopping;
+  this.pizzaCost = 0;
 }
 
-NiceSlice.prototype.pizzaOrder = function() {
-  if (this.pizzaSize = 'regular') {
+NiceSlice.prototype.Size = function() {
+  if (this.pizzaSize.includes("regular")) {
     this.pizzaSize += 20;
   }
-  else if (this.pizzaSize = 'regular') {
+  else if (this.pizzaSize.includes("large")) {
     this.pizzaSize += 28;
   }
   return this.pizzaSize;
@@ -25,13 +26,6 @@ let toppingsTotal = 0;
   };
 }
 
-  
-  
-
-NiceSlice.prototype.orderTotal = function() {
-
-}
-
 NiceSlice.prototype.addSizeCost = function() {
   this.pizzaSize = 0;
   if (this.pizzaSize === "regular") {
@@ -43,28 +37,8 @@ NiceSlice.prototype.addSizeCost = function() {
   return this.pizzaSize;
 }
 
-NiceSlice.prototype.addToppingCost = function() {
-  // if none are checked = null
-  this.pizzaTopping = 0;
-  for (let i = 0; i< this.pizzas.length; i++) {
-    this.total += this.pizzas[i].cost;
-  }
-}
+NiceSlice.prototype.orderTotal = function() {
 
-  let toppings = 
-  this.pizzaTopping = 0;
-  let pepperoni = this.pizzaTopping +4;
-  let pineapple = this.pizzaTopping +3;
-  let jalapeno = this.pizzaTopping +3;
-  if (this.pizzaTopping + "pepperoni" + "pineapple" + "jalapeno" = 
-  return this.pizzaTopping; 
-}
-
-NiceSlice.prototype.orderSummary = function() {
-  this.orderSummary = 0;
-  let totalCost = (this.pizzaSize + this.pizzaTopping);
-  totalCost.push(this.orderSummary)
-  return this.orderSummary;
 }
 
 // Business Logic for orderSummary:
@@ -72,6 +46,14 @@ function orderSummary() {
   let pizzaTotal = this.pizzaSize + this.pizzaTopping;
   return pizzaTotal;
 }
+
+  NiceSlice.prototype.orderSummary = function() {
+    this.orderSummary = 0;
+    let totalCost = (this.pizzaSize + this.pizzaTopping);
+    totalCost.push(this.orderSummary)
+    return this.orderSummary;
+  }
+
 
 // USER INTERFACE LOGIC
 
