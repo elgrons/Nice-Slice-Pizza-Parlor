@@ -61,7 +61,6 @@ Expected Output: (Based on this particular bit of user input) NiceSlice {pizzaSi
 
 ## Known Bugs
 
-* Bugs here:
 * More toppings and custom styles of pizza can always be added! There's no such thing as too much pizza!
 
 ## License

@@ -12,43 +12,36 @@
     <h1>🍕Nice Slice Pizza🍕</h1>
     <p>Welcome to Nice Slice Pizza Parlor! All of our pizzas are prepared vegan.</p><br>
     <p>Each pizza comes with house red sauce and vegan cheese.</p><br>
-    <!-- <div class="row">
-      <div class="col-md-6"> -->
-        <hr>
-        <form id="new-order">
-          <div class="pizza-size">
-            <h3>Choose Size:</h3>
-            <p>*Required: Choose One*</p>
-            <input type="radio" name="size" value="20" id="regular" checked>
-            <label for="regular">Regular 12" - $20</label><br>
-            <input type="radio" name="size" value="28" id="large">
-            <label for="large">Large 18" - $28</label><br>
+    <hr>
+      <form id="new-order">
+        <div class="pizza-size">
+          <h3>Choose Size:</h3>
+          <p>*Required: Choose One*</p>
+          <input type="radio" name="size" value="20" id="regular" checked>
+          <label for="regular">Regular 12" - $20</label><br>
+          <input type="radio" name="size" value="28" id="large">
+          <label for="large">Large 18" - $28</label><br>
+        </div>
+          <div class="pizza-toppings">
+            <br>
+            <h3>Choose Toppings:</h3>
+            <p>*Select as many as you like*</p>
+            <input type="checkbox" name="topping" value="4" id="pepperoni" class="toppings" checked>
+            <label for="large">Add Vegan Pepperoni +$4</label><br>
+            <input type="checkbox" name="topping" value="4" id="pineapple" class="toppings">
+            <label for="regular">Add Pineapple +$4</label><br>
+            <input type="checkbox" name="topping" value="4" id="jalapeno" class="toppings">
+            <label for="large">Add Jalapeno +$4</label>
+            <br>
+            <br>
           </div>
-            <div class="pizza-toppings">
-              <br>
-              <h3>Choose Toppings:</h3>
-              <p>*Select as many as you like*</p>
-              <input type="checkbox" name="topping" value="4" id="pepperoni" class="toppings" checked>
-              <label for="large">Add Vegan Pepperoni +$4</label><br>
-              <input type="checkbox" name="topping" value="4" id="pineapple" class="toppings">
-              <label for="regular">Add Pineapple +$4</label><br>
-              <input type="checkbox" name="topping" value="4" id="jalapeno" class="toppings">
-              <label for="large">Add Jalapeno +$4</label>
-              <br>
-              <br>
-            </div>
-            <button type="submit" class="btn-primary">Place Order</button>
+          <button type="submit" class="btn-primary">Place Order</button>
         </form>
         <hr>
         <h2>Order Summary:</h2>
-        <div id="pizzaTotal" class="hidden">
-          <p><span class="order-total"></span></p>
+        <div id="pizzaTotal">
+          <p>$<span id="order-total"></span></p>
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
   </div>
 </body>
-
 </html>

@@ -15,6 +15,13 @@ NiceSlice.prototype.orderSummary = function() {
 
 // USER INTERFACE LOGIC
 
+// function displayNiceSliceOrderSummary(event) {
+//   let orderTotal = niceSlice.orderSummary();
+//   const displayOrderTotal = niceSlice.orderSummary(event.target.id); //adding our .findContact()method from our Business Logic we're cheating a bit b/c addressBook is global, which is standing in for a database
+//   // .class-name #id-name . calls from class-name, # calls from id-name
+//   document.querySelector(".first-name").innerText = contact.firstName;
+// }
+
 function handleFormSubmission(event) {
   event.preventDefault();
 
@@ -27,22 +34,14 @@ function handleFormSubmission(event) {
         inputTopping += parseInt(pizzaToppings[i].value);
       }
     }
-  console.log(inputTopping);
-  console.log(inputSize);
 
   let niceSlice = new NiceSlice(inputSize, inputTopping);
 
   let orderTotal = niceSlice.orderSummary();
 
-  console.log(niceSlice);
-  }
+  document.getElementById("order-total").innerText = orderTotal;
+}
 
 window.addEventListener("load", function() { 
   document.querySelector("form#new-order").addEventListener("submit", handleFormSubmission);
 });
-
-  // function orderSummary(orderSummaryToDisplay) {
-  //   document.querySelector(".first-name").innerText = contact.firstName;
-  //   let pizzaTotalDiv = document.querySelector("div#pizzaTotal");
-  //   return;
-  // }
