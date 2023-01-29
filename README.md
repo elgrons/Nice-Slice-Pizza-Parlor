@@ -37,18 +37,20 @@ Expected Output: niceSlice {pizzaSize: 'regular', pizzaTopping:["pineapple" "ja
 
 *Test Passes*
 
-Describe: NiceSlice.prototype.pizzaCost
+Describe: NiceSlice.prototype.orderSummary
 
 * Test One
-Test: "It should add the cost of the size of the pizza to the total."
+Test: "It should add the cost of the pizza's size and toppings together and return the total cost of the pizza."
 Code: 
-NiceSlice.prototype.pizzaCost
-Expected Output: 
+niceSlice.OrderSummary ()
+Expected Output: (Based on this particular bit of user input) NiceSlice {pizzaSize: 20, pizzaTopping: 12, pizzaCost: 32}
 
+<!-- NiceSlice.prototype.orderSummary = function() {
+  this.pizzaCost = (this.pizzaSize + this.pizzaTopping);
+  return this.pizzaCost;
+} -->
 
-
-
-
+*Test Passes*
 
 ## Setup/Installation Requirements
 
