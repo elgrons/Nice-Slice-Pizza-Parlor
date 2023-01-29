@@ -56,6 +56,7 @@ Expected Output: (Based on this particular bit of user input) NiceSlice {pizzaSi
 
 * Clone the repository to your desktop.
 * Open the files and visit the website to order a nice slice!
+* [Go directly to the website via this link](https://elgrons.github.io/nice-slice-pizza-parlor/)
 
 * If there are any questions or concerns please reach out to Eliot at eliot.lauren@gmail.com.
 
