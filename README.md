@@ -37,33 +37,16 @@ Expected Output: niceSlice {pizzaSize: 'regular', pizzaTopping:["pineapple" "ja
 
 *Test Passes*
 
-Describe: NiceSlice.prototype.chooseSize
+Describe: NiceSlice.prototype.pizzaCost
 
 * Test One
-Test: "It should assign size choice to NiceSlice from user input."
+Test: "It should add the cost of the size of the pizza to the total."
 Code: 
-NiceSlice.prototype.chooseSize
+NiceSlice.prototype.pizzaCost
 Expected Output: 
 
-<!-- NiceSlice.prototype.chooseSize = function(size){
-  size.id = this.pizzaSize();
-} -->
 
-Describe NiceSlice.prototype.chooseSize
 
-* Test One
-Test: "It should return a Pizza object with two properties for toppings and size"
-Code: 
-const niceSlice = new Pizza(["pineapple", "jalapeno"], "regular");
-Expected Output: Pizza { toppings: ["pineapple", "jalapeno"],], size: "regular" }
-
-Describe NiceSlice.prototype.chooseTopping
-
-* Test One
-Test: "It should return a Pizza object with two properties for toppings and size"
-Code: 
-const niceSlice = new Pizza(["pineapple", "jalapeno"], "regular");
-Expected Output: Pizza { toppings: ["pineapple", "jalapeno"],], size: "regular" }
 
 
 
