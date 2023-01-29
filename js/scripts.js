@@ -8,7 +8,10 @@ function NiceSlice(pizzaSize, pizzaTopping) {
   this.pizzaCost = 0;
 }
 
-
+NiceSlice.prototype.orderSummary = function() {
+  this.pizzaCost = (this.pizzaSize + this.pizzaTopping);
+  return this.pizzaCost;
+}
 
 // USER INTERFACE LOGIC
 
@@ -28,6 +31,8 @@ function handleFormSubmission(event) {
   console.log(inputSize);
 
   let niceSlice = new NiceSlice(inputSize, inputTopping);
+
+  let orderTotal = niceSlice.orderSummary();
 
   console.log(niceSlice);
   }
