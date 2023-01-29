@@ -15,7 +15,7 @@
     <hr>
       <form id="new-order">
         <div class="pizza-size">
-          <h3>Choose Size:</h3>
+          <h3><strong>Choose Size:</strong></h3>
           <p>*Required: Choose One*</p>
           <input type="radio" name="size" value="20" id="regular" checked>
           <label for="regular">Regular 12" - $20</label><br>
@@ -24,7 +24,7 @@
         </div>
           <div class="pizza-toppings">
             <br>
-            <h3>Choose Toppings:</h3>
+            <h3><strong>Choose Toppings:</strong></h3>
             <p>*Select as many as you like*</p>
             <input type="checkbox" name="topping" value="4" id="pepperoni" class="toppings" checked>
             <label for="large">Add Vegan Pepperoni +$4</label><br>
@@ -39,7 +39,7 @@
         </form>
         <hr>
         <h2>Order Summary:</h2>
-        <div id="pizzaTotal">
+        <div id="pizzaTotal" class="pizzaTotal">
           <p>$<span id="order-total"></span></p>
         </div>
   </div>
